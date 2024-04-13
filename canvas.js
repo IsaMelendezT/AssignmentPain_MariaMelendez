@@ -76,3 +76,14 @@ let otherColorBox = document.querySelector('.other-color');
 otherColorBox.addEventListener('input', function(){
     drawColor =  this.value;
 })
+
+/*Automatic value for width slider and event listener*/
+let widthRangeSlider = document.querySelector('.width-range');
+document.addEventListener("DOMContentLoaded", function(){
+    widthRangeSlider.value =widthRangeSlider.min;
+    drawWidth = widthRangeSlider.value;
+})
+
+widthRangeSlider.addEventListener('input', function(){
+    drawWidth = this.value;
+})
