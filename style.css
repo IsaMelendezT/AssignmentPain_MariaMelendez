@@ -7,8 +7,7 @@ body{
 /*Styling Canvas element*/
 canvas {
     border: 1px solid black;
-    width: 95%;
-    height: 75vh;
+    width: 100%;
     cursor: pointer;
 }
 
