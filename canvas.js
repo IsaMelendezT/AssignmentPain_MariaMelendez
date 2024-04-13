@@ -69,3 +69,10 @@ let eraseBtn = document.getElementById('erase-button');
 eraseBtn.addEventListener('click', function(){
     drawColor = "white";
 })
+
+/*Functionality to other color box*/
+let otherColorBox = document.querySelector('.other-color');
+
+otherColorBox.addEventListener('input', function(){
+    drawColor =  this.value;
+})
