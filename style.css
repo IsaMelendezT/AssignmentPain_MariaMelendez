@@ -1,0 +1,80 @@
+/* Styling Body */
+
+body{
+    text-align: center;
+}
+
+/*Styling Canvas element*/
+canvas {
+    border: 1px solid black;
+    width: 95%;
+    height: 75vh;
+    cursor: pointer;
+}
+
+/*Styling tools container*/
+.tools {
+    justify-content: center;
+    margin-top: 1.2em;
+}
+
+/*Styling color option elements*/
+
+.color-option {
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    border: 2px solid black;
+    align-self: center;
+    position: relative;
+    margin: 1.5% auto;
+    opacity: 0.5;
+}
+
+.color-option:hover {
+    opacity: 1;
+}
+
+.color-option i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+/*Styling buttons*/
+.button {
+    align-self: center;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid wheat;
+    color: wheat;
+    background: #222;
+}
+
+/*Styling other color div*/
+.other-color {
+    align-self: center;
+    margin: 0 0.8em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/*Styling width range input*/
+.width-range {
+    align-self: center;
+    margin: 0 0.8px;
+}
+
+@media (min-width:500px) {
+    .tools{
+        display: flex;
+        justify-content: center;
+    }
+
+    .color-option, .button {
+        margin: 1.5%;
+    }
+}
+
