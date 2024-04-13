@@ -53,3 +53,12 @@ function stop(event){
     }
     event.preventDefault();
 }
+
+/* Function to clear Canvas*/
+let clearBtn = document.getElementById('clear-button');
+
+clearBtn.addEventListener('click', function(){
+    context.fillStyle = "white";
+    context.clearRect(0,0,canvas.width, canvas.height);
+    context.fillRect(0,0,canvas.width,canvas.height);
+})
